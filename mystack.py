@@ -1,4 +1,7 @@
-class Stack:
+"""
+LIFO
+"""
+class MyStack:
     def __init__(self):
         self.data = []
 

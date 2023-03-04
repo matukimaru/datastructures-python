@@ -8,16 +8,30 @@
 # numbers = numbers[:]
 # print(numbers)
 
-from stack import Stack
+from mystack import MyStack
+from myqueue import MyQueue
 
-s1 = Stack()
-s1bin = Stack()
+# s1 = MyStack()
+# s1bin = MyStack()
 
-s1.push(10).push(100)
-print(s1.data)
+# s1.push(10).push(100)
+# print(s1.data)
 
-s1bin.push(s1.pop())
-s1bin.push(s1.pop())
-s1bin.push(s1.pop())
-print(s1.data)
-print(s1bin.data)
+# s1bin.push(s1.pop())
+# s1bin.push(s1.pop())
+# s1bin.push(s1.pop())
+# print(s1.data)
+# print(s1bin.data)
+
+mq = MyQueue()
+
+mq.push(1).push(10).push(100)
+print(mq.data)
+
+print(mq.pop())
+print(mq.pop())
+print(mq.pop())
+print(mq.pop())
+print(mq.pop())
+print(mq.pop())
+print(mq.data)
